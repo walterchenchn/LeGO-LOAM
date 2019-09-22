@@ -24,12 +24,12 @@ $ cd ..
 $ catkin_make -j1
 ```
 ## 3. 运行
-## 3.1 运行 launch 文件
+### 3.1 运行 launch 文件
 ```
 $ roslaunch lego_loam run.launch
 ```
 注意：参数“/ use_sim_time”，对于模拟则设置为“true”，对于使用真实机器人则设置为“false”。
-## 3.2 播放bag文件
+### 3.2 播放bag文件
 ```
 $ rosbag play *.bag --clock --topic /velodyne_points /imu/data
 ```
